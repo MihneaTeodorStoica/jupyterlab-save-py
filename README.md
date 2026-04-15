@@ -1,6 +1,6 @@
 # jupyterlab-save-py
 
-[![CI](https://github.com/mihnea/jupyterlab-save-py/actions/workflows/ci.yml/badge.svg)](https://github.com/mihnea/jupyterlab-save-py/actions/workflows/ci.yml)
+[![CI](https://github.com/mihnea/jupyterlab-save-py/.github/workflows/ci.yml/badge.svg)](https://github.com/mihnea/jupyterlab-save-py/.github/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/jupyterlab-save-py.svg)](https://pypi.org/project/jupyterlab-save-py/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
