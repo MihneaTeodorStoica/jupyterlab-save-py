@@ -28,6 +28,22 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Cache uv packages
+        uses: actions/cache@v5
+        with:
+          path: ~/.cache/uv
+          key: ${{ runner.os }}-py3.11-uv-${{ hashFiles('uv.lock', 'pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-py3.11-uv-
+
+      - name: Cache Yarn packages
+        uses: actions/cache@v5
+        with:
+          path: .yarn/cache
+          key: ${{ runner.os }}-node20-yarn-${{ hashFiles('yarn.lock', 'package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node20-yarn-
+
       - name: Install uv
         run: python -m pip install uv
 
