@@ -17,6 +17,7 @@ import type {
 import { INotebookTracker, NotebookPanel } from "@jupyterlab/notebook";
 import { Contents } from "@jupyterlab/services";
 import { ISettingRegistry } from "@jupyterlab/settingregistry";
+import { pythonIcon } from "@jupyterlab/ui-components";
 import { DisposableDelegate, IDisposable } from "@lumino/disposable";
 
 const PLUGIN_ID = "jupyterlab-save-py:plugin";
@@ -62,6 +63,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     app.commands.addCommand(COMMAND_ID, {
       label: "Save .py",
+      icon: pythonIcon,
       caption: "Save the active notebook as a sibling Python script",
       isEnabled: () => getActiveNotebook(app, tracker) !== null,
       execute: async () => {
@@ -93,6 +95,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
       createNew: (panel: NotebookPanel): IDisposable => {
         const button = new ToolbarButton({
           label: "Save .py",
+          icon: pythonIcon,
           tooltip: "Save this notebook as a sibling Python script",
           onClick: () => {
             void app.commands.execute(COMMAND_ID);
