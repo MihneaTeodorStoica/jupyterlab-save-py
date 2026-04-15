@@ -1,0 +1,16 @@
+# Changelog
+
+All notable changes to this project are documented here.
+
+The format follows Keep a Changelog, and this project uses semantic versioning.
+
+## [0.1.0] - 2026-04-15
+
+### Added
+
+- Initial JupyterLab 4 prebuilt frontend extension.
+- Notebook toolbar button and command palette command named `Save .py`.
+- Frontend notebook-to-Python conversion with `percent` and `script` formats.
+- Contents API save into the active notebook's server-side directory.
+- Configurable overwrite behavior.
+- PyPI-ready Python packaging.

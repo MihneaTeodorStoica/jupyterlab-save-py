@@ -1,0 +1,22 @@
+{
+  "title": "Save .py",
+  "description": "Settings for saving the active notebook as a Python script.",
+  "jupyter.lab.setting-icon-label": "Save .py",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format": {
+      "title": "Format",
+      "description": "Output script format.",
+      "type": "string",
+      "enum": ["script", "percent"],
+      "default": "percent"
+    },
+    "overwrite": {
+      "title": "Overwrite",
+      "description": "Overwrite an existing .py file. If false, save as name-1.py, name-2.py, and so on.",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

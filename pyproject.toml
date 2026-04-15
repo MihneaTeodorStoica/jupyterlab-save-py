@@ -1,0 +1,95 @@
+[build-system]
+requires = [
+  "hatchling>=1.21.0",
+  "hatch-jupyter-builder>=0.9.1",
+  "jupyterlab>=4,<5"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "jupyterlab-save-py"
+version = "0.1.0"
+description = "JupyterLab extension to save the active notebook as a sibling Python script."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+authors = [
+  { name = "jupyterlab-save-py contributors" }
+]
+keywords = [
+  "jupyter",
+  "jupyterlab",
+  "jupyterlab-extension",
+  "notebook"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Web Environment",
+  "Framework :: Jupyter",
+  "Framework :: Jupyter :: JupyterLab",
+  "Framework :: Jupyter :: JupyterLab :: 4",
+  "Framework :: Jupyter :: JupyterLab :: Extensions",
+  "Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = [
+  "jupyterlab>=4,<5"
+]
+
+[project.urls]
+Changelog = "https://github.com/mihnea/jupyterlab-save-py/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/mihnea/jupyterlab-save-py"
+Issues = "https://github.com/mihnea/jupyterlab-save-py/issues"
+Source = "https://github.com/mihnea/jupyterlab-save-py"
+
+[tool.hatch.build.targets.sdist]
+artifacts = [
+  "jupyterlab_save_py/labextension"
+]
+exclude = [
+  ".github",
+  ".venv",
+  "node_modules",
+  ".ipynb_checkpoints"
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"jupyterlab_save_py/labextension" = "share/jupyter/labextensions/jupyterlab-save-py"
+"install.json" = "share/jupyter/labextensions/jupyterlab-save-py/install.json"
+
+[tool.hatch.build.hooks.jupyter-builder]
+dependencies = [
+  "hatch-jupyter-builder>=0.9.1"
+]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+  "jupyterlab_save_py/labextension/package.json"
+]
+skip-if-exists = [
+  "jupyterlab_save_py/labextension/static/remoteEntry.js"
+]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+build_cmd = "build:prod"
+npm = [
+  "jlpm"
+]
+
+[dependency-groups]
+dev = [
+  "build>=1.2.0",
+  "hatch>=1.9.0",
+  "hatch-jupyter-builder>=0.9.1",
+  "twine>=5.0.0"
+]

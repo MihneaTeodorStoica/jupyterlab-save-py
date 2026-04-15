@@ -1,0 +1,15 @@
+.venv/
+.codex
+.ipynb_checkpoints/
+__pycache__/
+*.egg-info/
+dist/
+build/
+lib/
+node_modules/
+*.tgz
+.yarn/
+.pnp.*
+.jupyter_releaser_checkout/
+tsconfig.tsbuildinfo
+jupyterlab_save_py/labextension/
