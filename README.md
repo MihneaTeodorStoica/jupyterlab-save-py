@@ -99,7 +99,7 @@ The distributions are written to `dist/`.
 This repository is configured for PyPI Trusted Publishing from GitHub Releases.
 Configure the PyPI project with:
 
-- Owner: `mihnea`
+- Owner: `MihneaTeodorStoica`
 - Repository: `jupyterlab-save-py`
 - Workflow: `publish.yml`
 - Environment: `pypi`
