@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "jupyterlab-save-py"
-version = "0.1.0"
+version = "0.1.1"
 description = "JupyterLab extension to save the active notebook as a sibling Python script."
 readme = "README.md"
 license = { file = "LICENSE" }

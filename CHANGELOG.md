@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 The format follows Keep a Changelog, and this project uses semantic versioning.
 
+## [0.1.1] - 2026-04-16
+
+### Fixed
+
+- Allow publishing a new patch release after the initial PyPI upload.
+
 ## [0.1.0] - 2026-04-15
 
 ### Added
