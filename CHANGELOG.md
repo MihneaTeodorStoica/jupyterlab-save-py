@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 The format follows Keep a Changelog, and this project uses semantic versioning.
 
+## [0.1.2] - 2026-04-16
+
+### Fixed
+
+- Correct project homepage and source links to the canonical GitHub repository.
+
 ## [0.1.1] - 2026-04-16
 
 ### Fixed

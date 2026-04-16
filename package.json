@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-save-py",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Save the active JupyterLab notebook as a sibling Python script.",
   "keywords": [
     "jupyter",
@@ -9,9 +9,9 @@
     "notebook",
     "python"
   ],
-  "homepage": "https://github.com/mihnea/jupyterlab-save-py",
+  "homepage": "https://github.com/MihneaTeodorStoica/jupyterlab-save-py",
   "bugs": {
-    "url": "https://github.com/mihnea/jupyterlab-save-py/issues"
+    "url": "https://github.com/MihneaTeodorStoica/jupyterlab-save-py/issues"
   },
   "license": "MIT",
   "author": "jupyterlab-save-py contributors",

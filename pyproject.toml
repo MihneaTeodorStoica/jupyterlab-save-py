@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "jupyterlab-save-py"
-version = "0.1.1"
+version = "0.1.2"
 description = "JupyterLab extension to save the active notebook as a sibling Python script."
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -48,10 +48,10 @@ dependencies = [
 ]
 
 [project.urls]
-Changelog = "https://github.com/mihnea/jupyterlab-save-py/blob/main/CHANGELOG.md"
-Homepage = "https://github.com/mihnea/jupyterlab-save-py"
-Issues = "https://github.com/mihnea/jupyterlab-save-py/issues"
-Source = "https://github.com/mihnea/jupyterlab-save-py"
+Changelog = "https://github.com/MihneaTeodorStoica/jupyterlab-save-py/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/MihneaTeodorStoica/jupyterlab-save-py"
+Issues = "https://github.com/MihneaTeodorStoica/jupyterlab-save-py/issues"
+Source = "https://github.com/MihneaTeodorStoica/jupyterlab-save-py"
 
 [tool.hatch.build.targets.sdist]
 artifacts = [
