@@ -101,6 +101,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
             void app.commands.execute(COMMAND_ID);
           },
         });
+        button.addClass("jp-SavePyToolbarButton");
 
         panel.toolbar.insertItem(10, "save-py", button);
 

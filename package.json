@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-save-py",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Save the active JupyterLab notebook as a sibling Python script.",
   "keywords": [
     "jupyter",

@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 The format follows Keep a Changelog, and this project uses semantic versioning.
 
+## [0.1.3] - 2026-04-16
+
+### Fixed
+
+- Add spacing between the Python toolbar icon and `Save .py` label.
+
 ## [0.1.2] - 2026-04-16
 
 ### Fixed
