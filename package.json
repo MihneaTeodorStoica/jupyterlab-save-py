@@ -47,7 +47,7 @@
     "@jupyterlab/apputils": "^4.0.0",
     "@jupyterlab/coreutils": "^6.0.0",
     "@jupyterlab/nbformat": "^4.0.0",
-    "@jupyterlab/notebook": "^4.0.0",
+    "@jupyterlab/notebook": "^4.5.7",
     "@jupyterlab/services": "^7.0.0",
     "@jupyterlab/settingregistry": "^4.0.0",
     "@jupyterlab/ui-components": "^4.0.0",
