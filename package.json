@@ -49,7 +49,7 @@
     "@jupyterlab/nbformat": "^4.0.0",
     "@jupyterlab/notebook": "^4.0.0",
     "@jupyterlab/services": "^7.0.0",
-    "@jupyterlab/settingregistry": "^4.0.0",
+    "@jupyterlab/settingregistry": "^4.5.7",
     "@jupyterlab/ui-components": "^4.0.0",
     "@lumino/disposable": "^2.0.0",
     "@lumino/widgets": "^2.0.0"
