@@ -32,7 +32,7 @@ jobs:
           node-version: "20"
 
       - name: Cache uv packages
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ~/.cache/uv
           key: ${{ runner.os }}-py3.11-uv-${{ hashFiles('uv.lock', 'pyproject.toml') }}
@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-py3.11-uv-
 
       - name: Cache Yarn packages
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: .yarn/cache
           key: ${{ runner.os }}-node20-yarn-${{ hashFiles('yarn.lock', 'package.json') }}
